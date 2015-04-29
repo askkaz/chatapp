@@ -1,9 +1,23 @@
-<div class = "header">
-	My Chat App!
-	{{#link-to 'about'}}About{{/link-to}}
-	{{#link-to 'messages'}}Messages{{/link-to}}
-</div>
+<div class = "container">
+  <div class = "row">
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">ChatApp</a>
+        </div>
+        <div>
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">{{#link-to 'messages' classNames=""}}Messages{{/link-to}}</a></li>
+            <li><a href="#">{{#link-to 'about' classNames=""}}About{{/link-to}}</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <div class = "row" id = "mainpage">
 
-<div class="chat-body">
-	{{outlet}}
+    <div class="chat-body">
+     {{outlet}}
+   </div>
+ </div>
 </div>
