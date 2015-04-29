@@ -6,8 +6,8 @@ module.exports = function(environment) {
     environment: environment,
     contentSecurityPolicy: { 'connect-src': "'self' wss://*.firebaseio.com" },
     firebase: 'https://8675309.firebaseio.com/',
-    baseURL: '/',
-    locationType: 'auto',
+    baseURL: '/chat-app',
+    locationType: 'hash',
     EmberENV: {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build
